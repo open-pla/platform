@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: dragon
+ * @Date: 2020-09-29 10:56:07
+ * @LastEditors: dragon
+ * @LastEditTime: 2020-09-30 17:34:04
+ */
 import { Settings as LayoutSettings } from '@ant-design/pro-layout';
 
 export default {
@@ -12,7 +20,7 @@ export default {
   menu: {
     locale: true,
   },
-  title: 'Ant Design Pro',
+  title: 'Iot',
   pwa: false,
   iconfontUrl: '',
 } as LayoutSettings & {

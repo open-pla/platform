@@ -2,11 +2,8 @@ import React from 'react';
 import { HeartTwoTone, SmileTwoTone } from '@ant-design/icons';
 import { Card, Typography, Alert } from 'antd';
 import { PageContainer } from '@ant-design/pro-layout';
-import SelectBasic from './SelectBasic';
-import FormRegister from './FormRegister';
 export default (): React.ReactNode => (
   <PageContainer content=" 这个页面只有 admin 权限才能查看">
-    <SelectBasic />
     <Card>
       <Alert
         message="umi ui 现已发布，欢迎使用 npm run ui 启动体验。"
@@ -39,6 +36,5 @@ export default (): React.ReactNode => (
       </a>
       。
     </p>
-    <FormRegister />
   </PageContainer>
 );

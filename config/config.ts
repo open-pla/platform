@@ -1,7 +1,16 @@
+/*
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: dragon
+ * @Date: 2020-09-29 10:56:07
+ * @LastEditors: dragon
+ * @LastEditTime: 2020-09-30 17:20:45
+ */
 // https://umijs.org/config/
 import { defineConfig } from 'umi';
-import defaultSettings from './defaultSettings';
+// import defaultSettings from './defaultSettings';
 import proxy from './proxy';
+import aliyunTheme from '@ant-design/aliyun-theme';
 
 const { REACT_APP_ENV } = process.env;
 
@@ -79,7 +88,14 @@ export default defineConfig({
   // Theme for antd: https://ant.design/docs/react/customize-theme-cn
   theme: {
     // ...darkTheme,
-    'primary-color': defaultSettings.primaryColor,
+    // 'primary-color': defaultSettings.primaryColor,
+    ...aliyunTheme,
+    'layout-header-background': '#FFFFFF',
+    'layout-header-color': '#D9D9D9',
+    'layout-sider-background-light': '#F5F5F5',
+    'layout-trigger-color-light': '#DEDEDE',
+    'menu-bg': '#F5F5F5',
+    'menu-item-active-bg': '#DEDEDE'
   },
   // @ts-ignore
   title: false,

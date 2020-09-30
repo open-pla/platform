@@ -32,20 +32,19 @@ const GlobalHeaderRight: React.FC<{}> = () => {
       <HeaderSearch
         className={`${styles.action} ${styles.search}`}
         placeholder="站内搜索"
-        defaultValue="umi ui"
+        defaultValue="搜索文档、控制台、API、解决方案和资源"
         options={[
-          { label: <a href="https://umijs.org/zh/guide/umi-ui.html">umi ui</a>, value: 'umi ui' },
           {
-            label: <a href="next.ant.design">Ant Design</a>,
-            value: 'Ant Design',
+            label: <a href="">文档</a>,
+            value: '文档',
           },
           {
-            label: <a href="https://protable.ant.design/">Pro Table</a>,
-            value: 'Pro Table',
+            label: <a href="">API</a>,
+            value: 'API',
           },
           {
-            label: <a href="https://prolayout.ant.design/">Pro Layout</a>,
-            value: 'Pro Layout',
+            label: <a href="">解决方案和资源</a>,
+            value: '解决方案和资源',
           },
         ]}
         // onSearch={value => {
