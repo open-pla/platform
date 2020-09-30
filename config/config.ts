@@ -4,7 +4,7 @@
  * @Autor: dragon
  * @Date: 2020-09-29 10:56:07
  * @LastEditors: dragon
- * @LastEditTime: 2020-09-30 17:20:45
+ * @LastEditTime: 2020-09-30 19:26:24
  */
 // https://umijs.org/config/
 import { defineConfig } from 'umi';
@@ -91,11 +91,13 @@ export default defineConfig({
     // 'primary-color': defaultSettings.primaryColor,
     ...aliyunTheme,
     'layout-header-background': '#FFFFFF',
-    'layout-header-color': '#D9D9D9',
+    'layout-header-color': '#DEDEDE',
     'layout-sider-background-light': '#F5F5F5',
     'layout-trigger-color-light': '#DEDEDE',
     'menu-bg': '#F5F5F5',
-    'menu-item-active-bg': '#DEDEDE'
+    'menu-item-active-bg': '#DEDEDE',
+    'tooltip-color': '#404040',
+    'tooltip-bg': 'rgba(255, 255, 255, 0.85)'
   },
   // @ts-ignore
   title: false,

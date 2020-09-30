@@ -1,12 +1,12 @@
 import { Tooltip, Tag, Space } from 'antd';
 import { QuestionCircleOutlined } from '@ant-design/icons';
 import React from 'react';
-import { useModel, SelectLang } from 'umi';
+import { useModel } from 'umi';
 import Avatar from './AvatarDropdown';
 import HeaderSearch from '../HeaderSearch';
 import styles from './index.less';
 
-export type SiderTheme = 'light' | 'dark';
+export type SiderTheme = 'light';
 
 const ENVTagColor = {
   dev: 'orange',
@@ -21,11 +21,11 @@ const GlobalHeaderRight: React.FC<{}> = () => {
     return null;
   }
 
-  const { navTheme, layout } = initialState.settings;
+  const {layout } = initialState.settings;
   let className = styles.right;
 
-  if ((navTheme === 'dark' && layout === 'top') || layout === 'mix') {
-    className = `${styles.right}  ${styles.dark}`;
+  if ((layout === 'top') || layout === 'mix') {
+    className = `${styles.right}`;
   }
   return (
     <Space className={className}>
@@ -52,7 +52,7 @@ const GlobalHeaderRight: React.FC<{}> = () => {
         // }}
       />
       <Tooltip title="使用文档">
-        <span
+        <span style={{background: 'red', color: 'green'}}
           className={styles.action}
           onClick={() => {
             window.location.href = 'https://pro.ant.design/docs/getting-started';
@@ -67,7 +67,7 @@ const GlobalHeaderRight: React.FC<{}> = () => {
           <Tag color={ENVTagColor[REACT_APP_ENV]}>{REACT_APP_ENV}</Tag>
         </span>
       )}
-      <SelectLang className={styles.action} />
+      {/* <SelectLang className={`${styles.action}`}/> */}
     </Space>
   );
 };
